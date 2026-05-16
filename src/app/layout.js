@@ -27,14 +27,13 @@
 //   );
 // }
 
-import "./globals.css"; // or your existing CSS import
+import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-// import Sidebar from "@/components/Sidebar";
 
 export const metadata = {
   title: "Enrilo",
-  description: "Your app description",
+  description: "Enrilo is a consultancy management platform that helps teams manage students, track visa applications, handle payments, and streamline operations all in one place.",
 };
 
 export default function RootLayout({ children }) {
@@ -42,10 +41,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
-        <div style={{ display: "flex" }}>
-          {/* <Sidebar /> */}
+        {children}
+        {/* <div style={{ display: "flex" }}>
           {children}
-        </div>
+        </div> */}
         <Footer />
       </body>
     </html>
