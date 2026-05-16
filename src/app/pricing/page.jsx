@@ -37,11 +37,11 @@ export default function PricingPage() {
             </p>
 
             {/* Price */}
-            <div className="mt-6 min-h-[96px]">
+            <div className="mt-6 min-h-24">
               <span className="text-4xl font-extrabold text-slate-900">
                 ₹{billing === "monthly" ? "6900" : "5175"}
               </span>
-              <span className="text-slate-600 text-sm"> /month</span>
+              <span className="text-slate-600 text-sm"> /month {billing === "annual" && (<span>(billed annually)</span>)}</span>
 
               {billing === "annual" && (
                 <p className="text-sm text-green-600 mt-1">
@@ -84,7 +84,7 @@ export default function PricingPage() {
             </p>
 
             {/* Price */}
-            <div className="mt-6 min-h-[96px]">
+            <div className="mt-6 min-h-24">
               <span className="text-3xl font-extrabold text-slate-900">
                 Custom Pricing
               </span>
