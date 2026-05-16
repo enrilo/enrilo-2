@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -23,4 +23,44 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+@import "tailwindcss";
+
+.input {
+  @apply border border-gray-300 rounded-md px-3 py-2 w-full text-sm focus:ring-2 focus:ring-[#2563EB] outline-none transition;
+}
+
+body {
+  @apply bg-[#F8FAFC] text-gray-900 font-sans;
+}
+
+/* In your CSS file or <style> */
+.autoscroll-container {
+  scrollbar-width: none !important; /* Firefox */
+}
+.autoscroll-container::-webkit-scrollbar {
+  display: none !important; /* Chrome, Safari, Edge */
+}
+
+@media print {
+  body * {
+    visibility: hidden; /* hide everything */
+  }
+  
+  .printable, .printable * {
+    visibility: visible; /* show only the receipt */
+  }
+  
+  .printable {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  /* hide buttons inside the modal when printing */
+  .printable .no-print {
+    display: none;
+  }
 }
