@@ -18,30 +18,6 @@ export default function Header() {
 
   let currentTitle = "Enrilo Dashboard";
 
-  if (titleMap[pathname]) {
-    currentTitle = titleMap[pathname];
-  } else if (/^\/edit-super-admin\/[A-Za-z0-9_-]+$/.test(pathname)) {
-    currentTitle = "Edit Super Admin";
-  } else if (/^\/view-super-admin\/[A-Za-z0-9_-]+$/.test(pathname)) {
-    currentTitle = "View Super Admin";
-  } else if (/^\/edit-consultancy\/[A-Za-z0-9_-]+$/.test(pathname)) {
-    currentTitle = "Edit Consultancy";
-  } else if (/^\/view-consultancy\/[A-Za-z0-9_-]+$/.test(pathname)) {
-    currentTitle = "View Consultancy";
-  } else if (/^\/view-a-payment\/[A-Za-z0-9_-]+$/.test(pathname)) {
-    currentTitle = "Payment Details";
-  } else if (/^\/edit-a-payment\/[A-Za-z0-9_-]+$/.test(pathname)) {
-    currentTitle = "Edit Payment Details";
-  } else if (/^\/consultancy\/\d+\/payments$/.test(pathname)) {
-    currentTitle = "Consultancy Payments";
-  } else if (/^\/update-master-admin\/[A-Za-z0-9_-]+$/.test(pathname)) {
-    currentTitle = "Edit Master Admin";
-  } else if (/^\/view-master-admin\/[A-Za-z0-9_-]+$/.test(pathname)) {
-    currentTitle = "View Master Admin";
-  } else {
-    currentTitle = "Enrilo";
-  }
-
   return (
     <header className="bg-white shadow p-4 flex flex-row justify-center">
       <h1 className="text-xl font-semibold text-gray-800">{currentTitle}</h1>
