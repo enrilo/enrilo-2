@@ -34,7 +34,8 @@ import favicon from "@/assets/images/svg/enrilo-e-transparent-bg.svg";
 
 export const metadata = {
   title: "Enrilo",
-  description: "Enrilo is a consultancy management platform that helps teams manage students, track visa applications, handle payments, and streamline operations all in one place.",
+  description:
+    "Enrilo is a consultancy management platform that helps teams manage students, track visa applications, handle payments, and streamline operations all in one place.",
   icons: {
     icon: favicon.src,
   },
@@ -43,46 +44,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="min-h-screen flex flex-col bg-gray-50">
         <Header />
-        {children}
+
+        {/* THIS is the key */}
+        <main className="flex-1">
+          {children}
+        </main>
+
         <Footer />
       </body>
     </html>
   );
 }
-
-// import "./globals.css";
-// import Header from "@/components/Header";
-// import Footer from "@/components/Footer";
-
-// export const metadata = {
-//   title: "Enrilo",
-//   description: "Enrilo is a consultancy management platform that helps teams manage students, track visa applications, handle payments, and streamline operations all in one place.",
-//   icons: {
-//     icon: '/src/assets/images/svg/enrilo-e-transparent-bg.svg',
-//     // shortcut: '/logo.png',
-//     // apple: '/apple-icon.png',
-//   },
-// };
-
-// export default function RootLayout({ children }) {
-//   return (
-//     <html lang="en">
-//       <head>
-//         <meta charSet="UTF-8" />
-//         <link rel="icon" type="image/svg+xml" href="/src/assets/images/svg/enrilo-e-transparent-bg.svg" />
-//         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-//         <title>Enrilo</title>
-//       </head>
-//       <body>
-//         <Header />
-//         {children}
-//         {/* <div style={{ display: "flex" }}>
-//           {children}
-//         </div> */}
-//         <Footer />
-//       </body>
-//     </html>
-//   );
-// }
