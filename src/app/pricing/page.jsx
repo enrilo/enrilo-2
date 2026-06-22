@@ -54,7 +54,7 @@ export default function PricingPage() {
             <ul className="mt-8 mb-4 space-y-4 text-left">
               {[
                 "2 Master Admin",
-                "10 Users",
+                "20 Users",
                 "Email Support",
                 "Role Based Access Control",
                 "Unlimited Student Records",
