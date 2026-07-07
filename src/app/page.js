@@ -1,212 +1,301 @@
-// import Image from "next/image";
+import Link from "next/link";
+import {
+  FileCheck2,
+  Bell,
+  FolderClock,
+  ListChecks,
+  CircleCheck,
+  Clock,
+} from "lucide-react";
+import { SITE_NAME } from "@/lib/seo-config";
 
-// export default function Home() {
-//   return (
-//     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-//       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-//         <Image
-//           className="dark:invert"
-//           src="/next.svg"
-//           alt="Next.js logo"
-//           width={100}
-//           height={20}
-//           priority
-//         />
-//         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-//           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-//             To get started, edit the page.js file.
-//           </h1>
-//           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-//             Looking for a starting point or more instructions? Head over to{" "}
-//             <a
-//               href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-//               className="font-medium text-zinc-950 dark:text-zinc-50"
-//             >
-//               Templates
-//             </a>{" "}
-//             or the{" "}
-//             <a
-//               href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-//               className="font-medium text-zinc-950 dark:text-zinc-50"
-//             >
-//               Learning
-//             </a>{" "}
-//             center.
-//           </p>
-//         </div>
-//         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-//           <a
-//             className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-//             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             <Image
-//               className="dark:invert"
-//               src="/vercel.svg"
-//               alt="Vercel logomark"
-//               width={16}
-//               height={16}
-//             />
-//             Deploy Now
-//           </a>
-//           <a
-//             className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-//             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             Documentation
-//           </a>
-//         </div>
-//       </main>
-//     </div>
-//   );
-// }
+export const metadata = {
+  title: `${SITE_NAME} | All-in-One Consultancy Management Software`,
+  description:
+    "Manage students, visa applications, documents, and follow-ups in one platform built specifically for educational consultancies. Replace spreadsheets and chaos with Enrilo.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: `${SITE_NAME} | All-in-One Consultancy Management Software`,
+    description:
+      "Manage students, visa applications, documents, and follow-ups in one platform built specifically for educational consultancies.",
+    url: "/",
+  },
+};
+
+const PROBLEMS = [
+  "Missed follow-ups and deadlines",
+  "Confusing application statuses",
+  "Lost or outdated documents",
+  "No single source of truth for student data",
+];
+
+const FEATURES = [
+  {
+    icon: ListChecks,
+    title: "Student Management",
+    description:
+      "Personal details, academic history, visa status, and counseling notes, all in one unified profile.",
+  },
+  {
+    icon: Bell,
+    title: "Smart Follow-Ups",
+    description:
+      "Automatically maintain follow up lists so your team never misses a call or reminder.",
+  },
+  {
+    icon: FolderClock,
+    title: "Document Storage",
+    description:
+      "Store transcripts, offer letters, payments, and visa documents with clear received/pending status.",
+  },
+  {
+    icon: FileCheck2,
+    title: "Application Tracking",
+    description:
+      "Track universities applied to and see outcomes instantly, whether it is accepted, rejected, or pending.",
+  },
+];
+
+const DIFFERENTIATORS = [
+  "Simple UI your team can learn quickly",
+  "Works for small and large consultancies",
+  "No unnecessary or confusing features",
+];
+
+const STEPS = [
+  "Add a student",
+  "Upload documents",
+  "Track applications",
+  "Monitor visa & payments",
+  "Stay on top of follow-ups",
+];
 
 export default function Home() {
   return (
-    <main className="flex-1 overflow-y-auto">
-      <div className="w-full bg-[#F8FAFC] text-[#334155]">
-        {/* HERO */}
-        <section className="px-6 py-24 bg-[#F8FAFC]">
-          <div className="max-w-6xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#0F172A] leading-tight">
-              All Your Consultancy Records. <br className="hidden md:block" />
-              One Powerful Platform.
+    <div className="w-full">
+      {/* HERO */}
+      <section className="px-4 pt-14 pb-16 sm:px-6 sm:pt-20 sm:pb-24 lg:px-8">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          <div className="reveal text-center lg:text-left">
+            <p className="stamp-blue mx-auto lg:mx-0">For education consultancies</p>
+            <h1 className="mt-5 font-display text-4xl font-semibold leading-[1.1] tracking-tight text-ink sm:text-5xl lg:text-[3.25rem]">
+              All your consultancy records.
+              <br className="hidden sm:block" /> One powerful platform.
             </h1>
-
-            <p className="mt-6 text-lg text-[#334155] max-w-3xl mx-auto">
-              Manage students, documents, applications, and follow-ups without spreadsheets or chaos. Enrilo is built specifically for educational consultancies.
+            <p className="mx-auto mt-6 max-w-xl text-lg text-muted lg:mx-0">
+              Manage students, documents, applications, and follow-ups
+              without spreadsheets or chaos. Enrilo is built specifically
+              for educational consultancies.
             </p>
-
-            <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-              <button className="px-8 py-3 rounded-lg bg-[#2563EB] text-white font-semibold hover:opacity-90 transition cursor-pointer">
+            <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
+              <Link
+                href="/contact-us"
+                className="rounded-lg bg-blue px-7 py-3.5 text-center font-semibold text-white transition hover:bg-blue-dark"
+              >
                 Book a Free Demo
-              </button>
-              <button className="px-8 py-3 rounded-lg bg-[#FACC15] text-[#0F172A] font-semibold hover:opacity-90 transition cursor-pointer">
-                Get Started
-              </button>
+              </Link>
+              <Link
+                href="/pricing"
+                className="rounded-lg border border-slate-line bg-white px-7 py-3.5 text-center font-semibold text-ink transition hover:border-ink"
+              >
+                See Pricing
+              </Link>
             </div>
           </div>
-        </section>
 
-        {/* PROBLEM */}
-        <section className="px-6 py-20 bg-white">
-          <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-[#0F172A]">
-              Still Managing Everything in Excel?
-            </h2>
-
-            <p className="mt-4 text-[#64748B]">
-              Most consultancies still rely on spreadsheets, WhatsApp messages,
-              and scattered files.
-            </p>
-
-            <div className="mt-10 grid sm:grid-cols-2 gap-6 text-left">
-              {[ "Missed follow-ups and deadlines", "Confusing application statuses", "Lost or outdated documents", "No single source of truth for student data" ].map((item) => (
-                <div key={item} className="p-6 rounded-xl border border-[#E2E8F0] bg-[#F8FAFC] hover:bg-[#94A3B8]">
-                  <p className="font-medium text-[#334155]">{item}</p>
+          {/* Signature visual: a student dossier card */}
+          <div className="reveal [animation-delay:120ms] mx-auto w-full max-w-md">
+            <div className="rounded-2xl border border-slate-line bg-white p-5 shadow-xl shadow-ink/5 sm:p-6">
+              <div className="flex items-center justify-between border-b border-dashed border-slate-line pb-4">
+                <div>
+                  <p className="font-mono text-[11px] uppercase tracking-wider text-muted">
+                    Student File · #EN-4821
+                  </p>
+                  <p className="mt-1 font-display text-lg font-semibold text-ink">
+                    Ananya Sharma
+                  </p>
                 </div>
-              ))}
-            </div>
+                <span className="stamp-green">Accepted</span>
+              </div>
 
-            <p className="mt-8 font-semibold text-[#2563EB]">
-              Enrilo replaces chaos with clarity.
-            </p>
-          </div>
-        </section>
+              <ul className="mt-4 space-y-3">
+                {[
+                  { label: "Offer letter received", done: true },
+                  { label: "Visa application filed", done: true },
+                  { label: "Tuition deposit paid", done: false },
+                ].map((row) => (
+                  <li
+                    key={row.label}
+                    className="flex items-center gap-3 text-sm text-ink"
+                  >
+                    {row.done ? (
+                      <CircleCheck size={18} className="shrink-0 text-status-green" />
+                    ) : (
+                      <Clock size={18} className="shrink-0 text-muted" />
+                    )}
+                    <span className={row.done ? "" : "text-muted"}>
+                      {row.label}
+                    </span>
+                  </li>
+                ))}
+              </ul>
 
-        {/* FEATURES */}
-        <section className="px-6 py-20 bg-[#F8FAFC]">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center text-[#0F172A]">
-              Everything Your Consultancy Needs, In One Place
-            </h2>
-
-            <div className="mt-14 grid md:grid-cols-2 gap-10">
-              <Feature title="Student Management" description="Personal details, academic history, visa status, and counseling notes, all in one unified profile." />
-              <Feature title="Smart Follow-Ups" description="Automatically maintain follow up lists so your team never misses a call or reminder." />
-              <Feature title="Document Storage" description="Store transcripts, offer letters, payments, and visa documents with clear received/pending status." />
-              <Feature title="Application Tracking" description="Track universities applied to and see outcomes instantly whether it is accepted, rejected, or pending." />
-            </div>
-          </div>
-        </section>
-
-        {/* DIFFERENTIATOR */}
-        <section className="px-6 py-20 bg-white">
-          <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-[#0F172A]">
-              Built Specifically for Educational Consultancies
-            </h2>
-
-            <p className="mt-6 text-[#64748B] max-w-3xl mx-auto">
-              Enrilo is not a generic CRM and not another spreadsheet. It’s built
-              around how consultancies actually work.
-            </p>
-
-            <div className="mt-10 grid sm:grid-cols-2 gap-6 text-left">
-              {[ "Simple UI your team can learn quickly", "Works for small and large consultancies", "No unnecessary or confusing features"].map((item) => (
-                <div key={item} className="p-5 rounded-xl border border-[#E2E8F0] bg-[#F8FAFC] hover:bg-[#94A3B8]">
-                  <p className="text-[#334155]">{item}</p>
-                </div>
-              ))}
+              <div className="mt-5 flex items-center justify-between rounded-lg bg-paper px-4 py-3">
+                <span className="text-xs font-semibold text-muted">
+                  Next follow-up
+                </span>
+                <span className="stamp-gold">Tomorrow, 11:00</span>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* HOW IT WORKS */}
-        <section className="px-6 py-20 bg-[#F8FAFC]">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center text-[#0F172A]">
-              How Enrilo Works
-            </h2>
-
-            <div className="mt-14 grid sm:grid-cols-2 md:grid-cols-5 gap-6 text-center">
-              {[ "Add a student", "Upload documents", "Track applications", "Monitor visa & payments", "Stay on top of follow-ups" ].map((step, index) => (
-                <div key={step} className="p-6 rounded-xl bg-white border border-[#E2E8F0] hover:bg-[#94A3B8]">
-                  <div className="text-[#2563EB] font-bold text-xl">
-                    {index + 1}
-                  </div>
-                  <p className="mt-3 font-medium text-[#334155]">{step}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* FINAL CTA */}
-        <section className="px-6 py-24 bg-[#1E293B] text-white">
-          <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold">
-              Ready to Replace Spreadsheets for Good?
-            </h2>
-
-            <p className="mt-4 text-[#CBD5E1]">
-              Bring clarity, structure, and efficiency to your consultancy
-              operations.
-            </p>
-
-            <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-              <button className="px-8 py-3 rounded-lg bg-[#2563EB] text-white font-semibold hover:opacity-90 transition cursor-pointer">
-                Book a Free Demo
-              </button>
-              <button className="px-8 py-3 rounded-lg bg-[#FACC15] text-[#0F172A] font-semibold hover:opacity-90 transition cursor-pointer">
-                Start Free Trial
-              </button>
-            </div>
-          </div>
-        </section>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="divider-perforated" />
       </div>
-    </main>
-  );
-}
 
-function Feature({ title, description }) {
-  return (
-    <div className="p-6 rounded-xl bg-white border border-[#E2E8F0]">
-      <h3 className="text-xl font-semibold text-[#0F172A]">{title}</h3>
-      <p className="mt-3 text-[#64748B]">{description}</p>
+      {/* PROBLEM */}
+      <section className="px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-5xl text-center">
+          <h2 className="font-display text-2xl font-semibold text-ink sm:text-3xl">
+            Still Managing Everything in Excel?
+          </h2>
+          <p className="mt-4 text-muted">
+            Most consultancies still rely on spreadsheets, WhatsApp
+            messages, and scattered files.
+          </p>
+
+          <div className="mt-10 grid gap-4 text-left sm:grid-cols-2">
+            {PROBLEMS.map((item) => (
+              <div
+                key={item}
+                className="card-lift rounded-xl border border-slate-line bg-white p-5"
+              >
+                <p className="font-medium text-ink">{item}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-8 font-semibold text-blue">
+            Enrilo replaces chaos with clarity.
+          </p>
+        </div>
+      </section>
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="divider-perforated" />
+      </div>
+
+      {/* FEATURES */}
+      <section className="px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-center font-display text-2xl font-semibold text-ink sm:text-3xl">
+            Everything Your Consultancy Needs, In One Place
+          </h2>
+
+          <div className="mt-12 grid gap-6 sm:grid-cols-2">
+            {FEATURES.map(({ icon: Icon, title, description }) => (
+              <div
+                key={title}
+                className="card-lift rounded-xl border border-slate-line bg-white p-6"
+              >
+                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-blue-light">
+                  <Icon size={22} className="text-blue" />
+                </div>
+                <h3 className="mt-4 text-xl font-semibold text-ink">
+                  {title}
+                </h3>
+                <p className="mt-2 text-muted">{description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="divider-perforated" />
+      </div>
+
+      {/* DIFFERENTIATOR */}
+      <section className="px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-5xl text-center">
+          <h2 className="font-display text-2xl font-semibold text-ink sm:text-3xl">
+            Built Specifically for Educational Consultancies
+          </h2>
+          <p className="mx-auto mt-6 max-w-3xl text-muted">
+            Enrilo is not a generic CRM and not another spreadsheet. It&apos;s
+            built around how consultancies actually work.
+          </p>
+
+          <div className="mt-10 grid gap-4 text-left sm:grid-cols-3">
+            {DIFFERENTIATORS.map((item) => (
+              <div
+                key={item}
+                className="card-lift rounded-xl border border-slate-line bg-white p-5"
+              >
+                <p className="text-ink">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="divider-perforated" />
+      </div>
+
+      {/* HOW IT WORKS - this is a real sequence, so numbering earns its place */}
+      <section className="px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-center font-display text-2xl font-semibold text-ink sm:text-3xl">
+            How Enrilo Works
+          </h2>
+
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+            {STEPS.map((step, index) => (
+              <div
+                key={step}
+                className="card-lift rounded-xl border border-slate-line bg-white p-6 text-center"
+              >
+                <div className="mx-auto font-mono text-2xl font-bold text-blue">
+                  {String(index + 1).padStart(2, "0")}
+                </div>
+                <p className="mt-3 font-medium text-ink">{step}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FINAL CTA */}
+      <section className="px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
+        <div className="mx-auto max-w-5xl rounded-2xl bg-ink px-6 py-14 text-center sm:px-12 sm:py-16">
+          <h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">
+            Ready to Replace Spreadsheets for Good?
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl text-slate-300">
+            Bring clarity, structure, and efficiency to your consultancy
+            operations.
+          </p>
+          <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
+            <Link
+              href="/contact-us"
+              className="rounded-lg bg-white px-7 py-3.5 text-center font-semibold text-ink transition hover:bg-slate-100"
+            >
+              Book a Free Demo
+            </Link>
+            <Link
+              href="/pricing"
+              className="rounded-lg border border-white/30 px-7 py-3.5 text-center font-semibold text-white transition hover:bg-white/10"
+            >
+              Start Free Trial
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

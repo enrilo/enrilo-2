@@ -11,8 +11,8 @@ import {
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useSelector, useDispatch } from "react-redux";
-import enriloFullLogoSrc from "@/assets/images/transparent-background/enrilo-with-tagline-300x300.png";
-import enriloLetterESrc from "@/assets/images/transparent-background/enrilo-e-100x100.png";
+import acadTrackerFullLogoSrc from "@/assets/images/transparent-bg/acadtrack-with-tagline-300x300.png";
+import acadTrackerLetterASrc from "@/assets/images/transparent-bg/a-logo.png";
 import { signoutUserSuccess } from "@/redux/user/userSlice";
 import Image from "next/image";
 
@@ -81,7 +81,9 @@ export default function Sidebar() {
     const matched = menuItems.find(
       (item) => item.path === pathname || item.subMenu?.some((sub) => sub.path === pathname)
     );
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setActiveMenu(matched?.subMenu ? matched.name : null);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
 
   const toggleSubMenu = (menuName) => setActiveMenu(activeMenu === menuName ? null : menuName);
@@ -119,7 +121,7 @@ export default function Sidebar() {
 
           {/* ← next/image replaces <img> */}
           <Image
-            src={isOpen ? enriloFullLogoSrc : enriloLetterESrc}
+            src={isOpen ? acadTrackerFullLogoSrc : acadTrackerLetterASrc}
             alt="Enrilo"
             className="rounded-lg shadow-lg hover:shadow-2xl transition-transform duration-300 hover:-translate-y-2"
           />

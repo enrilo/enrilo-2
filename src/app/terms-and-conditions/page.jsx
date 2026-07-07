@@ -1,8 +1,21 @@
-"use client";
+export const metadata = {
+  title: "Terms & Conditions",
+  description:
+    "Review the terms and conditions governing the use of Enrilo's consultancy management platform.",
+  alternates: {
+    canonical: "/terms-and-conditions",
+  },
+};
+
 export default function TermsAndConditions() {
   return (
-    <main className="flex-1 overflow-y-auto px-6 py-16">
-      <div className="max-w-4xl mx-auto space-y-12">
+    <div className="px-4 py-12 sm:px-6 sm:py-16">
+      <div className="mx-auto max-w-4xl space-y-12">
+        <div className="text-center">
+          <h1 className="font-display text-3xl font-semibold text-ink sm:text-4xl">
+            Terms &amp; Conditions
+          </h1>
+        </div>
 
         <Section title="Effective Date" content={
             <>
@@ -16,7 +29,7 @@ export default function TermsAndConditions() {
         <Section title="Introduction" content={
           <>
             <p>
-              These Terms and Conditions ('Terms') govern your use of the Enrilo platform. By accessing or using Enrilo, you agree to be bound by these Terms, our Privacy Policy, and our Data Processing Agreement (DPA). If you do not agree, you must not use the platform.
+              These Terms and Conditions (&apos;Terms&apos;) govern your use of the Enrilo platform. By accessing or using Enrilo, you agree to be bound by these Terms, our Privacy Policy, and our Data Processing Agreement (DPA). If you do not agree, you must not use the platform.
             </p>
             <p className="mt-2">
               Enrilo is intended for use by educational consultancies and authorized representatives. Students and individuals whose data is processed do not directly contract with us.
@@ -81,17 +94,17 @@ export default function TermsAndConditions() {
           }
         />
       </div>
-    </main>
+    </div>
   )
 }
 
 function Section({ title, content }) {
   return (
     <section>
-      <h2 className="text-2xl font-semibold text-[#0F172A]">
+      <h2 className="text-2xl font-semibold text-ink">
         {title}
       </h2>
-      <div className="mt-1 text-[#334155] leading-relaxed">
+      <div className="mt-1 leading-relaxed text-muted">
         {content}
       </div>
     </section>

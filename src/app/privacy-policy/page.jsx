@@ -1,8 +1,25 @@
-"use client";
+export const metadata = {
+  title: "Privacy Policy",
+  description:
+    "Read Enrilo's privacy policy to understand how we collect, use, and protect your consultancy's and students' data.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function PrivacyPolicy() {
   return (
-    <main className="flex-1 overflow-y-auto px-6 py-16">
-      <div className="max-w-4xl mx-auto space-y-12">
+    <div className="px-4 py-12 sm:px-6 sm:py-16">
+      <div className="mx-auto max-w-4xl space-y-12">
+        <div className="text-center">
+          <h1 className="font-display text-3xl font-semibold text-ink sm:text-4xl">
+            Privacy Policy
+          </h1>
+        </div>
 
         <Section
           title="Effective Date"
@@ -259,17 +276,17 @@ export default function PrivacyPolicy() {
         />
 
       </div>
-    </main>
+    </div>
   );
 }
 
 function Section({ title, content }) {
   return (
     <section>
-      <h2 className="text-2xl font-semibold text-[#0F172A] mb-1">
+      <h2 className="mb-1 text-2xl font-semibold text-ink">
         {title}
       </h2>
-      <div className="text-[#334155] leading-relaxed">
+      <div className="leading-relaxed text-muted">
         {content}
       </div>
     </section>
