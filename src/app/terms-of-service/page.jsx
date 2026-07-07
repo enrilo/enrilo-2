@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Terms of Service",
   description:
-    "Read the terms of service for using Enrilo's consultancy management software.",
+    "Read the terms of service for using AcadTracker's consultancy management software.",
   alternates: {
     canonical: "/terms-of-service",
   },
@@ -37,7 +37,7 @@ export default function TermsOfService() {
             <>
               <p>
                 These Terms of Service (“Terms”) govern access to and use of the
-                Enrilo platform (“Service”) operated by Enrilo LLP (“Company”,
+                AcadTracker platform (“Service”) operated by AcadTracker LLP (“Company”,
                 “we”, “us”, or “our”).
               </p>
               <p className="mt-2">
@@ -77,7 +77,7 @@ export default function TermsOfService() {
           content={
             <>
               <p>
-                Enrilo provides software tools that enable consultancies to:
+                AcadTracker provides software tools that enable consultancies to:
               </p>
               <ul className="list-disc pl-6 mt-2 space-y-1">
                 <li>Manage student records and documents</li>
@@ -116,7 +116,7 @@ export default function TermsOfService() {
           content={
             <>
               <p>
-                Enrilo acts as a Data Processor, and the consultancy acts as the
+                AcadTracker acts as a Data Processor, and the consultancy acts as the
                 Data Fiduciary as defined under Indian law.
               </p>
               <p className="mt-2">
@@ -132,7 +132,7 @@ export default function TermsOfService() {
           content={
             <p>
               You are responsible for configuring user roles, permissions, and
-              access controls within your organization. Enrilo is not
+              access controls within your organization. AcadTracker is not
               responsible for unauthorized access resulting from improper role
               assignment by the customer.
             </p>
@@ -154,7 +154,7 @@ export default function TermsOfService() {
             <>
               <p>
                 The Service, including all software, designs, logos, and
-                content, is the intellectual property of Enrilo LLP.
+                content, is the intellectual property of AcadTracker LLP.
               </p>
               <p className="mt-2">
                 You are granted a limited, non-exclusive, non-transferable
@@ -192,7 +192,7 @@ export default function TermsOfService() {
         <Section title="Limitation of Liability"
           content={
             <p>
-              To the maximum extent permitted by law, Enrilo LLP shall not be
+              To the maximum extent permitted by law, AcadTracker LLP shall not be
               liable for indirect, incidental, or consequential damages,
               including loss of data or business opportunities.
             </p>
@@ -202,7 +202,7 @@ export default function TermsOfService() {
         <Section title="Indemnification"
           content={
             <p>
-              You agree to indemnify and hold harmless Enrilo LLP from claims,
+              You agree to indemnify and hold harmless AcadTracker LLP from claims,
               damages, or liabilities arising from your use of the Service or
               violation of these Terms.
             </p>
@@ -236,12 +236,12 @@ export default function TermsOfService() {
               </p>
               <p className="mt-2">
                 Email:{" "}
-                <span className="text-[#2563EB]">support@enrilo.com</span>
+                <span className="text-[#2563EB]">support@acadtracker.com</span>
               </p>
               <p className="mt-1">
                 Website:{" "}
-                <a href="https://www.enrilo.com/contact-us" className="text-[#2563EB] underline">
-                  https://www.enrilo.com/contact-us
+                <a href="https://www.acadtracker.com/contact-us" className="text-[#2563EB] underline">
+                  https://www.acadtracker.com/contact-us
                 </a>
               </p>
             </>

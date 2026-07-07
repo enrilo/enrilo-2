@@ -10,12 +10,12 @@ import {
 export const metadata = {
   title: "Features - Student Management, Visa Tracking & More",
   description:
-    "Explore Enrilo's core features: student management, visa & application tracking, document storage, and smart follow-ups, all built for educational consultancies.",
+    "Explore AcadTracker's core features: student management, visa & application tracking, document storage, and smart follow-ups, all built for educational consultancies.",
   alternates: {
     canonical: "/features",
   },
   openGraph: {
-    title: "Enrilo Features - Everything Your Consultancy Needs",
+    title: "AcadTracker Features - Everything Your Consultancy Needs",
     description:
       "Student management, visa & application tracking, document storage, and smart follow-ups in one platform.",
     url: "/features",
@@ -33,7 +33,7 @@ const FEATURES = [
     icon: Bell,
     title: "Smart Follow-Ups",
     description:
-      "Enrilo automatically maintains follow-up lists for your team, so no call, deadline, or reminder slips through the cracks during a student's application journey.",
+      "AcadTracker automatically maintains follow-up lists for your team, so no call, deadline, or reminder slips through the cracks during a student's application journey.",
   },
   {
     icon: FolderClock,
@@ -71,7 +71,7 @@ export default function FeaturesPage() {
             Everything Your Consultancy Needs, In One Place
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted">
-            Enrilo brings student management, visa tracking, document
+            AcadTracker brings student management, visa tracking, document
             storage, and follow-ups together in a single consultancy
             management platform, so your team spends less time on admin
             and more time helping students.

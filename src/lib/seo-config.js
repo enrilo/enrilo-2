@@ -3,12 +3,12 @@
 // Everything else (metadataBase, canonical URLs, sitemap, robots, OG tags)
 // is derived from this file, so this is the only place you need to edit.
 
-export const SITE_URL = "https://enrilo.com"; // <-- change to your real domain
-export const SITE_NAME = "Enrilo";
+export const SITE_URL = "https://acadtracker.com"; // <-- change to your real domain
+export const SITE_NAME = "AcadTracker";
 export const DEFAULT_TITLE =
-  "Enrilo - Consultancy Management Software for Education Consultants";
+  "AcadTracker - Consultancy Management Software for Education Consultants";
 export const DEFAULT_DESCRIPTION =
-  "Enrilo is an all-in-one consultancy management platform for educational consultancies. Manage students, track visa applications, monitor documents, and streamline follow-ups in one place.";
+  "AcadTracker is an all-in-one consultancy management platform for educational consultancies. Manage students, track visa applications, monitor documents, and streamline follow-ups in one place.";
 
 // Primary keyword targets. These aren't a ranking factor on their own,
 // but they document the terms every page's title/description/H1s should
@@ -24,7 +24,7 @@ export const SITE_KEYWORDS = [
   "overseas education consultancy tool",
 ];
 
-export const TWITTER_HANDLE = "@enrilo"; // update or remove if you don't have one
+export const TWITTER_HANDLE = "@acadtracker"; // update or remove if you don't have one
 
 export const OG_IMAGE = {
   url: `${SITE_URL}/opengraph-image.png`,

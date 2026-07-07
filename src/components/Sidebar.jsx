@@ -122,7 +122,7 @@ export default function Sidebar() {
           {/* ← next/image replaces <img> */}
           <Image
             src={isOpen ? acadTrackerFullLogoSrc : acadTrackerLetterASrc}
-            alt="Enrilo"
+            alt="AcadTracker"
             className="rounded-lg shadow-lg hover:shadow-2xl transition-transform duration-300 hover:-translate-y-2"
           />
 

@@ -29,7 +29,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
           <div className="col-span-2 sm:col-span-1">
             <span className="font-display text-xl font-semibold text-white">
-              Enrilo
+              AcadTracker
             </span>
             <p className="mt-3 max-w-xs text-sm text-slate-400">
               Consultancy management software for educational consultancies.
@@ -58,7 +58,7 @@ export default function Footer() {
         <div className="my-8 h-px bg-white/10" />
 
         <div className="flex flex-col items-center justify-between gap-3 text-sm text-slate-400 sm:flex-row">
-          <p>© {new Date().getFullYear()} Enrilo. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} AcadTracker. All rights reserved.</p>
           <p>Built for educational consultancies.</p>
         </div>
       </div>

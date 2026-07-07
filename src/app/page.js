@@ -12,7 +12,7 @@ import { SITE_NAME } from "@/lib/seo-config";
 export const metadata = {
   title: `${SITE_NAME} | All-in-One Consultancy Management Software`,
   description:
-    "Manage students, visa applications, documents, and follow-ups in one platform built specifically for educational consultancies. Replace spreadsheets and chaos with Enrilo.",
+    "Manage students, visa applications, documents, and follow-ups in one platform built specifically for educational consultancies. Replace spreadsheets and chaos with AcadTracker.",
   alternates: {
     canonical: "/",
   },
@@ -86,7 +86,7 @@ export default function Home() {
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-lg text-muted lg:mx-0">
               Manage students, documents, applications, and follow-ups
-              without spreadsheets or chaos. Enrilo is built specifically
+              without spreadsheets or chaos. AcadTracker is built specifically
               for educational consultancies.
             </p>
             <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
@@ -180,7 +180,7 @@ export default function Home() {
           </div>
 
           <p className="mt-8 font-semibold text-blue">
-            Enrilo replaces chaos with clarity.
+            AcadTracker replaces chaos with clarity.
           </p>
         </div>
       </section>
@@ -226,7 +226,7 @@ export default function Home() {
             Built Specifically for Educational Consultancies
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-muted">
-            Enrilo is not a generic CRM and not another spreadsheet. It&apos;s
+            AcadTracker is not a generic CRM and not another spreadsheet. It&apos;s
             built around how consultancies actually work.
           </p>
 
@@ -251,7 +251,7 @@ export default function Home() {
       <section className="px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-center font-display text-2xl font-semibold text-ink sm:text-3xl">
-            How Enrilo Works
+            How AcadTracker Works
           </h2>
 
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">

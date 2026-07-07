@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Privacy Policy",
   description:
-    "Read Enrilo's privacy policy to understand how we collect, use, and protect your consultancy's and students' data.",
+    "Read AcadTracker's privacy policy to understand how we collect, use, and protect your consultancy's and students' data.",
   alternates: {
     canonical: "/privacy-policy",
   },
@@ -42,7 +42,7 @@ export default function PrivacyPolicy() {
           content={
             <>
               <p>
-                This Privacy Policy describes how Enrilo LLP (“Company”, “we”,
+                This Privacy Policy describes how AcadTracker LLP (“Company”, “we”,
                 “us”, or “our”) collects, uses, stores, and protects Personal
                 Data when you use our platform and services (“Service”).
               </p>
@@ -70,21 +70,21 @@ export default function PrivacyPolicy() {
               <h3 className="font-semibold mt-4">Definitions</h3>
               <ul className="list-disc pl-6 mt-2 space-y-1">
                 <li>
-                  <strong>Company:</strong> Enrilo LLP, Vadodara, Gujarat, India.
+                  <strong>Company:</strong> AcadTracker LLP, Vadodara, Gujarat, India.
                 </li>
                 <li>
-                  <strong>Service:</strong> The Enrilo web and mobile platform.
+                  <strong>Service:</strong> The AcadTracker web and mobile platform.
                 </li>
                 <li>
                   <strong>Personal Data:</strong> Any data about an identifiable
                   individual, including students and consultancy employees.
                 </li>
                 <li>
-                  <strong>Data Fiduciary:</strong> The consultancy using Enrilo
+                  <strong>Data Fiduciary:</strong> The consultancy using AcadTracker
                   that determines the purpose and means of processing data.
                 </li>
                 <li>
-                  <strong>Data Processor:</strong> Enrilo LLP, which processes
+                  <strong>Data Processor:</strong> AcadTracker LLP, which processes
                   Personal Data on behalf of Data Fiduciaries.
                 </li>
                 <li>
@@ -239,9 +239,9 @@ export default function PrivacyPolicy() {
                 In accordance with the DPDP Act, grievances may be addressed to:
               </p>
               <p className="mt-2 font-medium">
-                Grievance Officer – Enrilo LLP
+                Grievance Officer – AcadTracker LLP
               </p>
-              <p>Email: <span className="text-[#2563EB]">support@enrilo.com</span></p>
+              <p>Email: <span className="text-[#2563EB]">support@acadtracker.com</span></p>
               <p className="mt-1">
                 We aim to resolve grievances within a reasonable timeframe.
               </p>
@@ -263,12 +263,12 @@ export default function PrivacyPolicy() {
             <>
               <p>If you have questions regarding this Privacy Policy:</p>
               <p className="mt-2">
-                Email: <span className="text-[#2563EB]">support@enrilo.com</span>
+                Email: <span className="text-[#2563EB]">support@acadtracker.com</span>
               </p>
               <p className="mt-1">
                 Website:{" "}
-                <a href="https://www.enrilo.com/contact-us" className="text-[#2563EB] underline">
-                  https://www.enrilo.com/contact-us
+                <a href="https://www.acadtracker.com/contact-us" className="text-[#2563EB] underline">
+                  https://www.acadtracker.com/contact-us
                 </a>
               </p>
             </>

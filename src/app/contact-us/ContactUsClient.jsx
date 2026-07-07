@@ -53,7 +53,7 @@ export default function ContactUsClient() {
               Thank you!
             </h2>
             <p className="mt-3 text-muted">
-              We&rsquo;ve received your message. The Enrilo team will contact you soon.
+              We&rsquo;ve received your message. The AcadTracker team will contact you soon.
             </p>
           </div>
         ) : (
