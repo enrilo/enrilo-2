@@ -138,9 +138,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/images/regular-bg/without-tagline/acadtrack-without-tagline-1920x1080.png";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -172,14 +170,8 @@ export default function Header() {
       <div className="bg-white/90 backdrop-blur-sm">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3.5 sm:px-6 sm:py-4 lg:px-8">
           {/* Logo */}
-          <Link href="/" className="h-20 relative z-50 flex items-center">
-            <Image
-              src={logo}
-              alt="AcadTracker"
-              height={120}
-              priority
-              className="sm:h-10 lg:h-20"
-            />
+          <Link href="/" className="relative z-50 flex items-center text-xl font-bold tracking-tight text-slate sm:text-2xl">
+            AcadTracker
           </Link>
 
           {/* Desktop nav */}
