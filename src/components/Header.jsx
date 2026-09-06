@@ -113,7 +113,7 @@
 //             href="/privacy-policy"
 //             className="rounded-lg px-3 py-3 text-sm text-muted"
 //           >
-//             Privacy policy
+//             Privacy Policy
 //           </Link>
 //           <Link
 //             href="/terms-and-conditions"
@@ -144,7 +144,7 @@ const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/features", label: "Features" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/contact-us", label: "Contact us" },
+  { href: "/contact-us", label: "Contact Us" },
 ];
 
 export default function Header() {
@@ -166,12 +166,16 @@ export default function Header() {
   }, [menuOpen]);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-slate-line">
-      <div className="bg-white/90 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 w-full border-b border-slate-line shadow-sm shadow-ink/5">
+      <div className="bg-white/85 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3.5 sm:px-6 sm:py-4 lg:px-8">
           {/* Logo */}
-          <Link href="/" className="relative z-50 flex items-center text-xl font-bold tracking-tight text-slate sm:text-2xl">
-            AcadTracker
+          <Link
+            href="/"
+            className="relative z-50 flex items-center font-display text-xl font-bold tracking-tight sm:text-2xl"
+          >
+            <span className="text-ink">Acad</span>
+            <span className="text-blue">Tracker</span>
           </Link>
 
           {/* Desktop nav */}
@@ -246,7 +250,7 @@ export default function Header() {
             href="/privacy-policy"
             className="rounded-lg px-3 py-3 text-sm text-muted"
           >
-            Privacy policy
+            Privacy Policy
           </Link>
           <Link
             href="/terms-and-conditions"

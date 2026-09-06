@@ -10,14 +10,14 @@ const COLUMNS = [
   },
   {
     heading: "Company",
-    links: [{ href: "/contact-us", label: "Contact us" }],
+    links: [{ href: "/contact-us", label: "Contact Us" }],
   },
   {
     heading: "Legal",
     links: [
-      { href: "/privacy-policy", label: "Privacy policy" },
-      { href: "/terms-and-conditions", label: "Terms & conditions" },
-      { href: "/terms-of-service", label: "Terms of service" },
+      { href: "/privacy-policy", label: "Privacy Policy" },
+      { href: "/terms-and-conditions", label: "Terms & Conditions" },
+      { href: "/terms-of-service", label: "Terms of Service" },
     ],
   },
 ];
@@ -58,7 +58,7 @@ export default function Footer() {
         <div className="my-8 h-px bg-white/10" />
 
         <div className="flex flex-col items-center justify-between gap-3 text-sm text-slate-400 sm:flex-row">
-          <p>© {new Date().getFullYear()} AcadTracker. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} TechCraft Infotech LLP. All rights reserved.</p>
           <p>Built for educational consultancies.</p>
         </div>
       </div>

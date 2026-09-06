@@ -76,15 +76,17 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* HERO */}
-      <section className="px-4 pt-14 pb-16 sm:px-6 sm:pt-20 sm:pb-24 lg:px-8">
+      <section className="surface-navy px-4 pt-16 pb-20 sm:px-6 sm:pt-24 sm:pb-28 lg:px-8">
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="reveal text-center lg:text-left">
-            <p className="stamp-blue mx-auto lg:mx-0">For education consultancies</p>
-            <h1 className="mt-5 font-display text-4xl font-semibold leading-[1.1] tracking-tight text-ink sm:text-5xl lg:text-[3.25rem]">
+            <p className="stamp-blue mx-auto border-white/25 bg-white/10 text-blue-light lg:mx-0">
+              For education consultancies
+            </p>
+            <h1 className="mt-5 font-display text-4xl font-semibold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-[3.25rem]">
               All your consultancy records.
               <br className="hidden sm:block" /> One powerful platform.
             </h1>
-            <p className="mx-auto mt-6 max-w-xl text-lg text-muted lg:mx-0">
+            <p className="mx-auto mt-6 max-w-xl text-lg text-slate-300 lg:mx-0">
               Manage students, documents, applications, and follow-ups
               without spreadsheets or chaos. AcadTracker is built specifically
               for educational consultancies.
@@ -92,13 +94,13 @@ export default function Home() {
             <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
               <Link
                 href="/contact-us"
-                className="rounded-lg bg-blue px-7 py-3.5 text-center font-semibold text-white transition hover:bg-blue-dark"
+                className="rounded-lg bg-blue px-7 py-3.5 text-center font-semibold text-white shadow-lg shadow-blue/30 transition hover:bg-blue-dark"
               >
                 Book a Free Demo
               </Link>
               <Link
                 href="/pricing"
-                className="rounded-lg border border-slate-line bg-white px-7 py-3.5 text-center font-semibold text-ink transition hover:border-ink"
+                className="rounded-lg border border-white/25 bg-white/5 px-7 py-3.5 text-center font-semibold text-white transition hover:bg-white/10"
               >
                 See Pricing
               </Link>
@@ -107,7 +109,7 @@ export default function Home() {
 
           {/* Signature visual: a student dossier card */}
           <div className="reveal [animation-delay:120ms] mx-auto w-full max-w-md">
-            <div className="rounded-2xl border border-slate-line bg-white p-5 shadow-xl shadow-ink/5 sm:p-6">
+            <div className="rounded-2xl border border-slate-line bg-white p-5 shadow-2xl shadow-ink/40 sm:p-6">
               <div className="flex items-center justify-between border-b border-dashed border-slate-line pb-4">
                 <div>
                   <p className="font-mono text-[11px] uppercase tracking-wider text-muted">
@@ -272,7 +274,7 @@ export default function Home() {
 
       {/* FINAL CTA */}
       <section className="px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
-        <div className="mx-auto max-w-5xl rounded-2xl bg-ink px-6 py-14 text-center sm:px-12 sm:py-16">
+        <div className="surface-navy mx-auto max-w-5xl rounded-2xl border border-white/10 px-6 py-14 text-center shadow-xl shadow-ink/20 sm:px-12 sm:py-16">
           <h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">
             Ready to Replace Spreadsheets for Good?
           </h2>

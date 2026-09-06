@@ -14,12 +14,15 @@ export const metadata = {
 export default function PrivacyPolicy() {
   return (
     <div className="px-4 py-12 sm:px-6 sm:py-16">
-      <div className="mx-auto max-w-4xl space-y-12">
+      <div className="mx-auto max-w-4xl">
         <div className="text-center">
-          <h1 className="font-display text-3xl font-semibold text-ink sm:text-4xl">
+          <p className="stamp-blue mx-auto">Legal</p>
+          <h1 className="mt-5 font-display text-3xl font-semibold text-ink sm:text-4xl">
             Privacy Policy
           </h1>
         </div>
+
+        <div className="mt-10 space-y-12 rounded-3xl border border-slate-line bg-white px-6 py-10 shadow-lg shadow-ink/5 sm:px-10 sm:py-12">
 
         <Section
           title="Effective Date"
@@ -42,9 +45,10 @@ export default function PrivacyPolicy() {
           content={
             <>
               <p>
-                This Privacy Policy describes how AcadTracker LLP (“Company”, “we”,
-                “us”, or “our”) collects, uses, stores, and protects Personal
-                Data when you use our platform and services (“Service”).
+                This Privacy Policy describes how TechCraft Infotech LLP
+                (“Company”, “we”, “us”, or “our”), the operator of the
+                AcadTracker platform, collects, uses, stores, and protects
+                Personal Data when you use our platform and services (“Service”).
               </p>
               <p className="mt-2">
                 Our Service is intended for use by educational consultancies and
@@ -70,10 +74,11 @@ export default function PrivacyPolicy() {
               <h3 className="font-semibold mt-4">Definitions</h3>
               <ul className="list-disc pl-6 mt-2 space-y-1">
                 <li>
-                  <strong>Company:</strong> AcadTracker LLP, Vadodara, Gujarat, India.
+                  <strong>Company:</strong> TechCraft Infotech LLP, Vadodara,
+                  Gujarat, India, the operator of AcadTracker.
                 </li>
                 <li>
-                  <strong>Service:</strong> The AcadTracker web and mobile platform.
+                  <strong>Service:</strong> The AcadTracker web and/or mobile platform.
                 </li>
                 <li>
                   <strong>Personal Data:</strong> Any data about an identifiable
@@ -84,8 +89,8 @@ export default function PrivacyPolicy() {
                   that determines the purpose and means of processing data.
                 </li>
                 <li>
-                  <strong>Data Processor:</strong> AcadTracker LLP, which processes
-                  Personal Data on behalf of Data Fiduciaries.
+                  <strong>Data Processor:</strong> TechCraft Infotech LLP, which
+                  processes Personal Data on behalf of Data Fiduciaries.
                 </li>
                 <li>
                   <strong>You:</strong> A user of the Service, including
@@ -239,9 +244,9 @@ export default function PrivacyPolicy() {
                 In accordance with the DPDP Act, grievances may be addressed to:
               </p>
               <p className="mt-2 font-medium">
-                Grievance Officer – AcadTracker LLP
+                Grievance Officer – TechCraft Infotech LLP (AcadTracker)
               </p>
-              <p>Email: <span className="text-[#2563EB]">support@acadtracker.com</span></p>
+              <p>Email: <span className="text-[#2563EB]">support@techcraftinfotech.com</span></p>
               <p className="mt-1">
                 We aim to resolve grievances within a reasonable timeframe.
               </p>
@@ -263,7 +268,7 @@ export default function PrivacyPolicy() {
             <>
               <p>If you have questions regarding this Privacy Policy:</p>
               <p className="mt-2">
-                Email: <span className="text-[#2563EB]">support@acadtracker.com</span>
+                Email: <span className="text-[#2563EB]">support@techcraftinfotech.com</span>
               </p>
               <p className="mt-1">
                 Website:{" "}
@@ -274,7 +279,7 @@ export default function PrivacyPolicy() {
             </>
           }
         />
-
+        </div>
       </div>
     </div>
   );

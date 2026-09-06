@@ -7,19 +7,21 @@
    stamp gold is the one warm accent, used sparingly.
    ========================================================================== */
 @theme {
-  --color-ink: #0f172a;
-  --color-slate: #1e293b;
-  --color-slate-line: #e2e8f0;
-  --color-muted: #64748b;
-  --color-paper: #f7f9fc;
+  /* Palette sampled from the AcadTracker logo: deep navy field,
+     royal-blue wordmark, single warm gold accent (the grad cap). */
+  --color-ink: #16233f;
+  --color-slate: #24334f;
+  --color-slate-line: #e4e8f1;
+  --color-muted: #5b6a85;
+  --color-paper: #f5f8fd;
 
-  --color-blue: #2563eb;
-  --color-blue-dark: #1d4ed8;
-  --color-blue-light: #eaf0ff;
+  --color-blue: #2f66e3;
+  --color-blue-dark: #1f4cc0;
+  --color-blue-light: #e9f1ff;
 
-  --color-gold: #e2a83b;
-  --color-gold-dark: #b8811e;
-  --color-gold-light: #fdf3df;
+  --color-gold: #f6b81c;
+  --color-gold-dark: #b07d08;
+  --color-gold-light: #fef3d9;
 
   --color-status-green: #15803d;
   --color-status-green-bg: #eafbef;
@@ -40,6 +42,33 @@
 
 body {
   @apply bg-paper text-ink font-body antialiased;
+    background-image: radial-gradient(
+    62rem 42rem at 50% -12rem,
+    color-mix(in srgb, var(--color-blue) 12%, transparent) 0%,
+    transparent 70%
+  );
+  background-repeat: no-repeat;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-blue) 22%, transparent);
+  color: var(--color-ink);
+}
+
+/* ---- Hero / CTA navy surface ----------------------------------------- */
+.surface-navy {
+  background-image:
+    radial-gradient(
+      40rem 24rem at 12% 0%,
+      color-mix(in srgb, var(--color-blue) 35%, transparent) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      36rem 22rem at 100% 100%,
+      color-mix(in srgb, var(--color-gold) 16%, transparent) 0%,
+      transparent 55%
+    ),
+    linear-gradient(160deg, var(--color-slate) 0%, var(--color-ink) 55%);
 }
 
 /* ---- Signature: stamp badge -------------------------------------------- */
@@ -106,7 +135,8 @@ body {
 }
 .card-lift:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 24px -12px rgba(15, 23, 42, 0.18);
+  border-color: color-mix(in srgb, var(--color-blue) 35%, var(--color-slate-line));
+  box-shadow: 0 16px 32px -16px color-mix(in srgb, var(--color-ink) 45%, transparent);
 }
 
 /* ---- Motion, respecting user preference --------------------------------- */

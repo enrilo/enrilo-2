@@ -10,12 +10,15 @@ export const metadata = {
 export default function TermsOfService() {
   return (
     <div className="px-4 py-12 sm:px-6 sm:py-16">
-      <div className="mx-auto max-w-4xl space-y-12">
+      <div className="mx-auto max-w-4xl">
         <div className="text-center">
-          <h1 className="font-display text-3xl font-semibold text-ink sm:text-4xl">
+          <p className="stamp-blue mx-auto">Legal</p>
+          <h1 className="mt-5 font-display text-3xl font-semibold text-ink sm:text-4xl">
             Terms of Service
           </h1>
         </div>
+
+        <div className="mt-10 space-y-12 rounded-3xl border border-slate-line bg-white px-6 py-10 shadow-lg shadow-ink/5 sm:px-10 sm:py-12">
 
         <Section title="Effective Date"
           content={
@@ -37,8 +40,8 @@ export default function TermsOfService() {
             <>
               <p>
                 These Terms of Service (“Terms”) govern access to and use of the
-                AcadTracker platform (“Service”) operated by AcadTracker LLP (“Company”,
-                “we”, “us”, or “our”).
+                AcadTracker platform (“Service”) operated by TechCraft Infotech
+                LLP (“Company”, “we”, “us”, or “our”).
               </p>
               <p className="mt-2">
                 Our Service is intended for use by educational consultancies and
@@ -142,7 +145,7 @@ export default function TermsOfService() {
         <Section title="Subscription, Fees, and Payments"
           content={
             <p>
-              Certain features of the Service may require payment of fees.
+              All features of the Service require payment of fees.
               Pricing, billing cycles, and payment terms shall be communicated
               separately and agreed upon prior to activation of paid features.
             </p>
@@ -154,7 +157,7 @@ export default function TermsOfService() {
             <>
               <p>
                 The Service, including all software, designs, logos, and
-                content, is the intellectual property of AcadTracker LLP.
+                content, is the intellectual property of TechCraft Infotech LLP.
               </p>
               <p className="mt-2">
                 You are granted a limited, non-exclusive, non-transferable
@@ -192,8 +195,8 @@ export default function TermsOfService() {
         <Section title="Limitation of Liability"
           content={
             <p>
-              To the maximum extent permitted by law, AcadTracker LLP shall not be
-              liable for indirect, incidental, or consequential damages,
+              To the maximum extent permitted by law, TechCraft Infotech LLP
+              shall not be liable for indirect, incidental, or consequential damages,
               including loss of data or business opportunities.
             </p>
           }
@@ -202,7 +205,7 @@ export default function TermsOfService() {
         <Section title="Indemnification"
           content={
             <p>
-              You agree to indemnify and hold harmless AcadTracker LLP from claims,
+              You agree to indemnify and hold harmless TechCraft Infotech LLP from claims,
               damages, or liabilities arising from your use of the Service or
               violation of these Terms.
             </p>
@@ -236,7 +239,7 @@ export default function TermsOfService() {
               </p>
               <p className="mt-2">
                 Email:{" "}
-                <span className="text-[#2563EB]">support@acadtracker.com</span>
+                <span className="text-[#2563EB]">support@techcraftinfotech.com</span>
               </p>
               <p className="mt-1">
                 Website:{" "}
@@ -247,7 +250,7 @@ export default function TermsOfService() {
             </>
           }
         />
-
+        </div>
       </div>
     </div>
   );
