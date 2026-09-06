@@ -30,11 +30,11 @@ export default function PrivacyPolicy() {
             <ul className="list-disc pl-6 mt-2 space-y-1">
               <li>
                 This Privacy Policy is effective as of{" "}
-                <span className="font-bold">December 21, 2025</span>.
+                <span className="font-bold">September 6, 2026</span>.
               </li>
               <li>
                 Last updated on{" "}
-                <span className="font-bold">December 21, 2025</span>.
+                <span className="font-bold">September 6, 2026</span>.
               </li>
             </ul>
           }

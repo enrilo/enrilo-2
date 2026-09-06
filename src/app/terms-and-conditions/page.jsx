@@ -23,8 +23,8 @@ export default function TermsAndConditions() {
         <Section title="Effective Date" content={
             <>
               <ul className="list-disc pl-6 mt-2 space-y-1">
-                <li>These Terms are effective as of <span className="font-bold">December 21, 2025</span>.</li>
-                <li>Last updated on  <span className="font-bold">December 21, 2025</span>.</li>
+                <li>These Terms are effective as of <span className="font-bold">September 6, 2026</span>.</li>
+                <li>Last updated on  <span className="font-bold">September 6, 2026</span>.</li>
               </ul>
             </>
           } />
